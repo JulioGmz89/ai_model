@@ -94,4 +94,4 @@ Implementar una matriz de confusión proporciona un desglose detallado del rendi
 
 ## Referencias
 
-Laith Alzubaidi, Zhang, J., Humaidi, A. J., Al-Dujaili, A. Q., Duan, Y., Omran Al-Shamma, … Farhan, L. (2021). Review of deep learning: concepts, CNN architectures, challenges, applications, future directions. Journal of Big Data, 8(1). [https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8)
+[1]Laith Alzubaidi, Zhang, J., Humaidi, A. J., Al-Dujaili, A. Q., Duan, Y., Omran Al-Shamma, … Farhan, L. (2021). Review of deep learning: concepts, CNN architectures, challenges, applications, future directions. Journal of Big Data, 8(1). [https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8)
