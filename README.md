@@ -31,3 +31,23 @@ Primero los datos se organizaron en directorios separados para entrenamiento, va
 3. **Width Shift Range**: De forma aleatoria, en un rango, desplaza horizontalmente simulando diferentes posiciones y ayudando a la red a aprender mejor.
 4. **Zoom Range**: Como su nombre lo indica, hace un zoom aleatorio entre un rango que define el usuario. Esto sirve para simular diferentes distancias de la cámara, ayudando al modelo a aprender características relevantes a diferentes escalas.
 5. **Horizontal Flip**: Esta función voltea horizontalmente las imágenes.
+
+## Modelo
+
+### Capas Convolutivas
+
+Se tienen 3 capas convolutivas, la primera tiene 32 filtros de 3x3 y activación ReLU. Esta capa detecta características básicas como bordes y texturas. Las siguientes capas aumentan el número de filtros (64 y 128) para aprender características más complejas y específicas.
+
+El añadir más capas convolutivas permite al modelo aprender características de bajo, medio y alto nivel. Esto se justifica por investigaciones que demuestran que aumentar la profundidad de la red mejora significativamente el rendimiento en tareas de clasificación de imágenes​ (SpringerOpen)​.
+
+### Capas MaxPooling
+
+Cada capa convolutiva le sigue una capa de MaxPooling de 2x2, esta reduce el número de parámetros, evitando un overfitting.
+
+### Capas Densas
+
+Se cuenta con dos capas densas. La primera tiene 512 unidades y una activación ReLU, esta reconoce las características aprendidas y las transforma en algo más útil para la clasificación. La segunda es una función sigmoide, ideal para la clasificación binaria, ya que mapea los valores de salida entre 0 y 1, interpretándose como probabilidades.
+
+### Optimizador
+
+Se decidió por utilizar Adam ya que combina las ventajas de los optimizadores RMSprop y Momentum.
